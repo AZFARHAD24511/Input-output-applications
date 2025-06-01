@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+scipy
+matplotlib
+arabic_reshaper
+python-bidi
+openpyxl
