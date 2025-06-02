@@ -15,10 +15,10 @@ st.title("بهینه‌سازی سرمایه‌گذاری در استان هرم
 # تنظیمات ورودی در نوار کناری (sidebar)
 st.sidebar.header("تنظیمات ورودی")
 target_growth_percent = st.sidebar.number_input(
-    "انتخاب رشد اسمی هدف (%)", value=41.0, min_value=0.0, max_value=200.0, step=1.0
+    "انتخاب رشد اسمی(رشد واقعی بعلاوه تورم) هدف (%)", value=41.0, min_value=0.0, max_value=200.0, step=1.0
 )
 epsilon_percent = st.sidebar.number_input(
-    "انتخاب حداقل رشد نسبی هر بخش (%)", value=35.0, min_value=0.0, max_value=100.0, step=1.0
+    "انتخاب تورم مورد انتظار (%)", value=35.0, min_value=0.0, max_value=100.0, step=1.0
 )
 epsilon = epsilon_percent / 100.0  # تبدیل درصد به کسر
 
