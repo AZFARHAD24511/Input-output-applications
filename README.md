@@ -44,9 +44,8 @@ $$
 
 1. **رشد نسبی کل اقتصاد باید حداقل به سطح هدف برسد:**
 
-$$
-\sum_{i=1}^{n} (L \vec{x})_i \geq G_{\text{target}} = \left( \frac{\text{target\_growth\_percent}}{100} \right) \cdot \sum_{i=1}^{n} g_i
-$$
+Σ (Lx)i ≥ G_target = (target_growth_percent / 100) * Σ g_i
+
 
 2. **رشد هر بخش باید حداقل برابر با $\epsilon \cdot g_i$ باشد:**
 
