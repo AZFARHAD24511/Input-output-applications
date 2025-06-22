@@ -84,6 +84,15 @@ $$
 ### 🔸نمونه کار برای استان هرمزگان:
 [![allocation](https://github.com/AZFARHAD24511/IO_Budget/blob/main/budget_allocation1.png)](https://iobudget-pdv2ak9zuxbmqyq485jf7v.streamlit.app/)
 
+
+
+**برای اجرای این برنامه، به یک جدول داده‌های ورودی-خروجی در قالب فایل اکسل نیاز دارید. نمونه‌ای از این فایل را می‌توانید از لینک زیر دریافت کنید:**
+
+
+> [Industry\_by\_Industry\_IOT\_Model\_D.xlsx](https://github.com/AZFARHAD24511/datasets/raw/refs/heads/main/Industry_by_Industry_IOT_Model_D.xlsx)
+
+
+
 ### Budget Allocation Optimization Based on Regional Input-Output Tables:
 
 In response to the growing demand from provincial Planning and Budget Organizations regarding the optimal allocation of budgets among economic sectors—under the constraint of achieving a minimum economic growth rate (e.g., 6%) while ensuring broad sectoral participation—I have developed a program tailored to this need.
