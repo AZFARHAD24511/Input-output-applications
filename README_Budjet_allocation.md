@@ -96,6 +96,10 @@ It identifies which economic sectors will experience nominal value-added growth 
 
 Users input the desired nominal growth rate of value added and the target inflation rate, and the program, using input-output accounting principles, computes the necessary parameters. This allows for evidence-based planning and supports effective budgeting decisions across sectors.
 
+Sure! Here's a clearer and more polished version of your sentence:
+
+**To run the app, you need an input-output table in Excel format, such as the one available at the following link:**
+[Industry\_by\_Industry\_IOT\_Model\_D.xlsx](https://github.com/AZFARHAD24511/datasets/raw/refs/heads/main/Industry_by_Industry_IOT_Model_D.xlsx)
 
 
 
