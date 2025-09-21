@@ -118,4 +118,26 @@ Sure! Here's a clearer and more polished version of your sentence:
 
 
 
+### CITIATION
+**APA Style:**
+Farhadi, A. (2025). *Optimal budget allocation using regional input-output tables: An application to economic growth targeting under inflation constraints.* ResearchGate. https://doi.org/10.13140/RG.2.2.34377.81760
+
+**Chicago Style:**
+Farhadi, Aazizallah. 2025. "Optimal Budget Allocation Using Regional Input-Output Tables: An Application to Economic Growth Targeting under Inflation Constraints." ResearchGate. September 2025. https://doi.org/10.13140/RG.2.2.34377.81760.
+
+**BibTeX:**
+
+@misc{Farhadi2025Budget,
+  author       = {Aazizallah Farhadi},
+  title        = {Optimal Budget Allocation Using Regional Input-Output Tables: An Application to Economic Growth Targeting under Inflation Constraints},
+  year         = {2025},
+  month        = sep,
+  doi          = {10.13140/RG.2.2.34377.81760},
+  howpublished = {\\url{https://www.researchgate.net/publication/Optimal_Budget_Allocation_Using_Regional_Input-Output_Tables}},
+  note         = {License CC BY 4.0}
+}
+
+
+
+
 
