@@ -81,8 +81,12 @@ $$
 * $\frac{L \vec{x}^{\ast}}{\vec{g}}$: رشد نسبی هر بخش
 
 ---
-### 🔸نمونه کار برای استان هرمزگان:
+### 🔸نمونه کار برای استان هرمزگان در پلت فرم استریملایت:
 [![allocation](https://github.com/AZFARHAD24511/IO_Budget/blob/main/budget_allocation1.png)](https://iobudget-pdv2ak9zuxbmqyq485jf7v.streamlit.app/)
+
+
+[![allocation](https://github.com/AZFARHAD24511/IO_Budget/blob/main/shiny_io_hormz.png)](https://azfar2451.shinyapps.io/hormozgan-shiny/)
+
 
 
 
