@@ -85,6 +85,8 @@ $$
 [![allocation](https://github.com/AZFARHAD24511/IO_Budget/blob/main/budget_allocation1.png)](https://iobudget-pdv2ak9zuxbmqyq485jf7v.streamlit.app/)
 
 
+### 🔸نمونه کار برای استان هرمزگان در پلت فرم شاینی(این وبسایت در داخل ایران مشکل دسترسی ندارد):
+
 [![allocation](https://github.com/AZFARHAD24511/IO_Budget/blob/main/shiny_io_hormz.png)](https://azfar2451.shinyapps.io/hormozgan-shiny/)
 
 
