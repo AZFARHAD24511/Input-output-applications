@@ -1,16 +1,16 @@
+<div dir="rtl">
 
-### بهینه‌سازی تخصیص بودجه استانها بر اساس جدول داده-ستانده منطقه‌ای:
+### بهینه‌سازی تخصیص بودجه استان‌ها بر اساس جدول داده-ستانده منطقه‌ای
 
-در پاسخ به نیاز روزافزون سازمان‌های مدیریت و برنامه‌ریزی استان‌ها برای تخصیص بهینه بودجه بین بخش‌های مختلف اقتصادی—با این قید که حداقل نرخ رشد اقتصادی مشخصی (مثلاً ۶ درصد) محقق شود و همزمان طیف وسیعی از بخش‌های اقتصادی را در بر گیرد—برنامه‌ای طراحی کرده‌ام که دقیقاً به همین منظور توسعه یافته است.
+در پاسخ به نیاز روزافزون سازمان‌های مدیریت و برنامه‌ریزی استان‌ها برای تخصیص بهینه بودجه بین بخش‌های مختلف اقتصادی — با این قید که حداقل نرخ رشد اقتصادی مشخصی (مثلاً ۶ درصد) محقق شود و هم‌زمان طیف وسیعی از بخش‌های اقتصادی را در بر گیرد — برنامه‌ای طراحی کرده‌ام که دقیقاً به همین منظور توسعه یافته است.
 
-این برنامه بر پایه جدول داده-ستانده منطقه‌ای عمل می‌کند و دو خروجی اصلی ارائه می‌دهد:
+این برنامه بر پایه‌ی جدول داده-ستانده منطقه‌ای عمل می‌کند و دو خروجی اصلی ارائه می‌دهد:
 
-تعیین حداقل بودجه لازم برای دستیابی به رشد اقتصادی هدف‌گذاری‌شده؛
+1. تعیین حداقل بودجه لازم برای دستیابی به رشد اقتصادی هدف‌گذاری‌شده؛  
+2. شناسایی اینکه کدام بخش‌های اقتصادی در این تخصیص، چه میزان رشد اسمی در ارزش افزوده خواهند داشت.
 
-شناسایی اینکه کدام بخش‌های اقتصادی در این تخصیص، چه میزان رشد اسمی در ارزش افزوده خواهند داشت.
-
-در این برنامه، نرخ رشد اسمی ارزش افزوده و نرخ تورم مورد نظر توسط کاربر وارد می‌شود و سپس برنامه با استفاده از منطق حسابداری جدول داده-ستانده، پارامترهای لازم را استخراج و محاسبه می‌نماید. این ابزار به برنامه‌ریزان کمک می‌کند تا تصمیم‌گیری‌های بودجه‌ای را به‌صورت علمی و مبتنی بر داده انجام دهند.
-حتماً! در ادامه، نکات و روابط **ریاضی برنامه بهینه‌سازی سرمایه‌گذاری** که در کد Streamlit شما پیاده‌سازی شده‌اند، به‌صورت فرمول‌های LaTeX آماده شده‌اند تا بتوانید آن‌ها را در یک فایل `README.md` (با فرمت تصویر یا در مستندات جانبی مانند PDF یا Sphinx) استفاده کنید:
+در این برنامه، نرخ رشد اسمی ارزش افزوده و نرخ تورم مورد نظر توسط کاربر وارد می‌شود و سپس برنامه با استفاده از منطق حسابداری جدول داده-ستانده، پارامترهای لازم را استخراج و محاسبه می‌نماید.  
+این ابزار به برنامه‌ریزان کمک می‌کند تا تصمیم‌گیری‌های بودجه‌ای را به‌صورت علمی و مبتنی بر داده انجام دهند.
 
 ---
 
@@ -18,19 +18,19 @@
 
 ### 🔹 تعریف نمادها:
 
-| نماد                    | توضیح                                                 |
-| ----------------------- | ----------------------------------------------------- |
-| $L$                     | ماتریس معکوس لئونتیف (Leontief Inverse)               |
-| $A$                     | ماتریس ضرایب فنی بین بخشی                             |
-| $\vec{g}$               | بردار ارزش افزوده هر بخش (GVA)                        |
-| $\vec{x}$               | بردار سرمایه‌گذاری بهینه در هر بخش                    |
-| $\epsilon$              | نرخ رشد حداقلی برای هر بخش (ناشی از تورم و رشد واقعی) |
-| $G_{\text{target}}$     | رشد اسمی کل مورد انتظار در اقتصاد                     |
-| $\vec{w}_{\text{cost}}$ | بردار ضرایب وزن هزینه‌ای برای سرمایه‌گذاری در هر بخش  |
+| نماد | توضیح |
+|------|--------|
+| $L$ | ماتریس معکوس لئونتیف (Leontief Inverse) |
+| $A$ | ماتریس ضرایب فنی بین‌بخشی |
+| $\vec{g}$ | بردار ارزش افزوده هر بخش (GVA) |
+| $\vec{x}$ | بردار سرمایه‌گذاری بهینه در هر بخش |
+| $\epsilon$ | نرخ رشد حداقلی برای هر بخش (ناشی از تورم و رشد واقعی) |
+| $G_{\text{target}}$ | رشد اسمی کل مورد انتظار در اقتصاد |
+| $\vec{w}_{\text{cost}}$ | بردار ضرایب وزن هزینه‌ای برای سرمایه‌گذاری در هر بخش |
 
 ---
 
-### 🔸 هدف بهینه‌سازی:
+### 🔸 تابع هدف:
 
 **کمینه‌سازی مجموع هزینه‌های سرمایه‌گذاری وزن‌دار:**
 
@@ -40,11 +40,14 @@ $$
 
 ---
 
-### 🔸 محدودیت‌ها:
+### 🔸 قیدها:
 
 1. **رشد نسبی کل اقتصاد باید حداقل به سطح هدف برسد:**
 
-Σ (Lx)i ≥ G_target = (target_growth_percent / 100) * Σ g_i
+$$
+\sum_i (L \vec{x})_i \geq G_{\text{target}} = \frac{\text{TargetGrowthPercent}}{100} \times \sum_i g_i
+$$
+
 
 
 2. **رشد هر بخش باید حداقل برابر با $\epsilon \cdot g_i$ باشد:**
@@ -57,18 +60,16 @@ $$
 
 ### 🔸 وزن‌دهی تابع هدف:
 
-وزن هر بخش برای سرمایه‌گذاری بر اساس شاخص‌های لینکج و ضریب تغییرات:
-
 $$
 w_i = 1 + \lambda_1 (1 - BL_i^{\text{norm}}) + \lambda_2 (1 - FL_i^{\text{norm}}) + \mu_1 \cdot CV_{BL_i}^{\text{norm}} + \mu_2 \cdot CV_{FL_i}^{\text{norm}}
 $$
 
 که در آن:
 
-* $BL_i = \sum_j L_{ij}$ (شاخص لینکج پسین)
-* $FL_i = \sum_j G_{ij}$ (شاخص لینکج پیشین با استفاده از معکوس گُش: $G = (I - A^\top)^{-1}$)
-* $CV$ ضریب تغییرات سطر/ستون از $A$
-* پارامترهای $\lambda_1, \lambda_2, \mu_1, \mu_2$ ضرایب قابل تنظیم توسط طراح مدل هستند.
+* $BL_i = \sum_j L_{ij}$ → شاخص پیوند پسین  
+* $FL_i = \sum_j G_{ij}$ → شاخص پیوند پیشین با استفاده از معکوس گُش: $G = (I - A^\top)^{-1}$  
+* $A$  ضریب تغییرات سطر/ستون از $CV$  
+* پارامترهای $\lambda_1, \lambda_2, \mu_1, \mu_2$ ضرایب قابل تنظیم هستند.
 
 ---
 
@@ -76,68 +77,49 @@ $$
 
 پس از حل مدل:
 
-* $\vec{x}^{\ast}$: سرمایه‌گذاری بهینه در هر بخش
-* $L \vec{x}^{\ast}$: رشد مطلق تولید هر بخش
-* $\frac{L \vec{x}^{\ast}}{\vec{g}}$: رشد نسبی هر بخش
+* $\vec{x}^{\ast}$ → سرمایه‌گذاری بهینه در هر بخش  
+* $L \vec{x}^{\ast}$ → رشد مطلق تولید هر بخش  
+* $\frac{L \vec{x}^{\ast}}{\vec{g}}$ → رشد نسبی هر بخش  
 
----
-### 🔸نمونه کار برای استان هرمزگان در پلت فرم استریملایت:
+
+### 🔸 نمونه کار برای استان هرمزگان در پلتفرم Shiny (این وب‌سایت در داخل ایران قابل دسترسی است):
+
+[![allocation](https://github.com/AZFARHAD24511/IO_Budget/blob/main/SHINI_HORMZ.png)](https://azfar2451.shinyapps.io/hormozgan-shiny/)
+
+
+
+### 🔸 نمونه کار برای استان هرمزگان در پلتفرم Streamlit(این وب‌سایت در داخل ایران با فیلترشکن قابل دسترسی است):
+
 [![allocation](https://github.com/AZFARHAD24511/IO_Budget/blob/main/budget_allocation1.png)](https://iobudget-pdv2ak9zuxbmqyq485jf7v.streamlit.app/)
 
 
-### 🔸نمونه کار برای استان هرمزگان در پلت فرم شاینی(این وبسایت در داخل ایران مشکل دسترسی ندارد):
-
-[![allocation](https://github.com/AZFARHAD24511/IO_Budget/blob/main/shiny_io_hormz.png)](https://azfar2451.shinyapps.io/hormozgan-shiny/)
 
 
 
+### 🔸 فایل داده نمونه:
 
-**برای اجرای این برنامه، به یک جدول داده ستانده در قالب فایل اکسل نیاز دارید. نمونه‌ای از این فایل را می‌توانید از لینک زیر دریافت کنید:**
+برای اجرای این برنامه، به یک جدول داده‌-ستانده در قالب فایل Excel نیاز دارید.  
+نمونه‌ای از این فایل را می‌توانید از لینک زیر دریافت کنید:
 
+[Industry_by_Industry_IOT_Model_D.xlsx](https://github.com/AZFARHAD24511/datasets/raw/refs/heads/main/Industry_by_Industry_IOT_Model_D.xlsx)
 
-> [Industry\_by\_Industry\_IOT\_Model\_D.xlsx](https://github.com/AZFARHAD24511/datasets/raw/refs/heads/main/Industry_by_Industry_IOT_Model_D.xlsx)
+</div>
 
+---
 
+### Budget Allocation Optimization Based on Regional Input-Output Tables
 
-### Budget Allocation Optimization Based on Regional Input-Output Tables:
-
-In response to the growing demand from provincial Planning and Budget Organizations regarding the optimal allocation of budgets among economic sectors—under the constraint of achieving a minimum economic growth rate (e.g., 6%) while ensuring broad sectoral participation—I have developed a program tailored to this need.
+In response to the growing demand from provincial Planning and Budget Organizations regarding the optimal allocation of budgets among economic sectors — under the constraint of achieving a minimum economic growth rate (e.g., 6%) while ensuring broad sectoral participation — I have developed a program tailored to this need.
 
 This application is built upon the regional input-output (I-O) table and provides two core insights:
 
-It calculates the minimum budget required to reach the specified economic growth.
+1. It calculates the minimum budget required to reach the specified economic growth.  
+2. It identifies which economic sectors will experience nominal value-added growth under this allocation.
 
-It identifies which economic sectors will experience nominal value-added growth under this allocation.
+Users input the desired nominal growth rate of value added and the target inflation rate, and the program, using input-output accounting principles, computes the necessary parameters.  
+This allows for evidence-based planning and supports effective budgeting decisions across sectors.
 
-Users input the desired nominal growth rate of value added and the target inflation rate, and the program, using input-output accounting principles, computes the necessary parameters. This allows for evidence-based planning and supports effective budgeting decisions across sectors.
+---
 
-Sure! Here's a clearer and more polished version of your sentence:
-
-**To run the app, you need an input-output table in Excel format, such as the one available at the following link:**
-[Industry\_by\_Industry\_IOT\_Model\_D.xlsx](https://github.com/AZFARHAD24511/datasets/raw/refs/heads/main/Industry_by_Industry_IOT_Model_D.xlsx)
-
-
-
-### CITIATION
-**APA Style:**
-Farhadi, A. (2025). *Optimal budget allocation using regional input-output tables: An application to economic growth targeting under inflation constraints.* ResearchGate. https://doi.org/10.13140/RG.2.2.34377.81760
-
-**Chicago Style:**
-Farhadi, Aazizallah. 2025. "Optimal Budget Allocation Using Regional Input-Output Tables: An Application to Economic Growth Targeting under Inflation Constraints." ResearchGate. September 2025. https://doi.org/10.13140/RG.2.2.34377.81760.
-
-**BibTeX:**
-
-@misc{Farhadi2025Budget,
-  author       = {Aazizallah Farhadi},
-  title        = {Optimal Budget Allocation Using Regional Input-Output Tables: An Application to Economic Growth Targeting under Inflation Constraints},
-  year         = {2025},
-  month        = sep,
-  doi          = {10.13140/RG.2.2.34377.81760},
-  howpublished = {\\url{https://www.researchgate.net/publication/Optimal_Budget_Allocation_Using_Regional_Input-Output_Tables}},
-  note         = {License CC BY 4.0}
-}
-
-
-
-
-
+**To run the app, you need an input-output table in Excel format, such as the one available at the following link:**  
+[Industry_by_Industry_IOT_Model_D.xlsx](https://github.com/AZFARHAD24511/datasets/raw/refs/heads/main/Industry_by_Industry_IOT_Model_D.xlsx)
