@@ -66,8 +66,8 @@ $$
 
 که در آن:
 
-* $BL_i = \sum_j L_{ij}$ → شاخص لینکج پسین  
-* $FL_i = \sum_j G_{ij}$ → شاخص لینکج پیشین با استفاده از معکوس گُش: $G = (I - A^\top)^{-1}$  
+* $BL_i = \sum_j L_{ij}$ → شاخص پیوند پسین  
+* $FL_i = \sum_j G_{ij}$ → شاخص پیوند پیشین با استفاده از معکوس گُش: $G = (I - A^\top)^{-1}$  
 * $A$  ضریب تغییرات سطر/ستون از $CV$  
 * پارامترهای $\lambda_1, \lambda_2, \mu_1, \mu_2$ ضرایب قابل تنظیم هستند.
 
@@ -84,11 +84,11 @@ $$
 
 ### 🔸 نمونه کار برای استان هرمزگان در پلتفرم Shiny (این وب‌سایت در داخل ایران قابل دسترسی است):
 
-[![allocation](https://github.com/AZFARHAD24511/IO_Budget/blob/main/shiny_io_hormz.png)](https://azfar2451.shinyapps.io/hormozgan-shiny/)
+[![allocation](https://github.com/AZFARHAD24511/IO_Budget/blob/main/SHINI_HORMZ.png)](https://azfar2451.shinyapps.io/hormozgan-shiny/)
 
 
 
-### 🔸 نمونه کار برای استان هرمزگان در پلتفرم Streamlit:
+### 🔸 نمونه کار برای استان هرمزگان در پلتفرم Streamlit(این وب‌سایت در داخل ایران با فیلترشکن قابل دسترسی است):
 
 [![allocation](https://github.com/AZFARHAD24511/IO_Budget/blob/main/budget_allocation1.png)](https://iobudget-pdv2ak9zuxbmqyq485jf7v.streamlit.app/)
 
